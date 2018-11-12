@@ -17,34 +17,25 @@ public class Entornopractica1 {
     public static void main(java.lang.String[] args) {
     String cadena, num;
     int  cont=0;
-    
+    char fin;
     Scanner sc=new Scanner (System.in);
  
-    calcular(cont);
-  
-    
-    }
-    
-    
-    
-     public static void calcular(int cont){
-         String num, cadena ;
-         char fin;
-         Scanner sc=new Scanner (System.in);
-         do{
-            System.out.println("Anota un caracter ");
-            num=sc.nextLine();
+   
+    do{
+        System.out.println("Anota un caracter ");
+        num=sc.nextLine();
         
-            System.out.println("Anota una cadena");
-            cadena=sc.nextLine();
+        System.out.println("Anota una cadena");
+        cadena=sc.nextLine();
         
-                if (cadena.equalsIgnoreCase(num)){    
+        if (cadena.equalsIgnoreCase(num)){    
                 cont++;
-                }
-            System.out.println("Desea continuar");
-            fin=sc.nextLine().charAt(0);
+            }
+        System.out.println("Desea continuar");
+        fin=sc.nextLine().charAt(0);
         }while(fin=='s');
-         System.out.println("La veces que ha estado"+num+"han sido"+cont);
-     }
+    System.out.println("La veces que ha estado"+num+"han sido"+cont);
+    }
+     
     
 }
